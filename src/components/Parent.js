@@ -10,13 +10,13 @@ import Child from './Child';
        }
        this.greetParent = this.greetParent.bind(this)
      }
-     greetParent(){
-         alert(`Hello ${this.state.parentName}`);
+     greetParent(Child){
+         alert(`Hello ${this.state.parentName} from ${Child}`);
      }
   render() {
     return (
       <div>
-          <Child/>
+          <Child greetHandler={this.greetParent}/>
       </div>
     )
   }
