@@ -9,14 +9,22 @@ class UserGreeting extends Component {
         }
     }
     render() {
-        let message
-        if(this.state.isLoggedIn){
-            message = <div>Welcome Fona</div>
-        }
-        else{
-            message = <div>Welcome Guest</div>
-        }
-        return message
+        return(
+            this.state.isLoggedIn?
+            <div>Welcome Fona</div>:
+            <div>Welcome Guest</div>
+        )
+        //Element variable 
+        // let message
+        // if(this.state.isLoggedIn){
+        //     message = <div>Welcome Fona</div>
+        // }
+        // else{
+        //     message = <div>Welcome Guest</div>
+        // }
+        // return message
+
+
         // //IF Else Rendering
         // if (this.state.isLoggedIn) {
         //     return (
