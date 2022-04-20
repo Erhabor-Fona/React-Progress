@@ -9,11 +9,13 @@ class UserGreeting extends Component {
         }
     }
     render() {
-        return(
-            this.state.isLoggedIn?
-            <div>Welcome Fona</div>:
-            <div>Welcome Guest</div>
-        )
+        return this.state.isLoggedIn && <div>Welcome Fona</div>
+        // Tenary Operators
+        // return(
+        //     this.state.isLoggedIn?
+        //     <div>Welcome Fona</div>:
+        //     <div>Welcome Guest</div>
+        // )
         //Element variable 
         // let message
         // if(this.state.isLoggedIn){
